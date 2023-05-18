@@ -85,8 +85,18 @@ const config: HardhatUserConfig = {
       polygonMumbai: process.env.POLYGONSCAN_KEY || '',
       arbitrumOne: process.env.ARBISCAN_KEY || '',
       arbitrumTestnet: process.env.ARBISCAN_KEY || '',
+      mvm: process.env.ETHERSCAN_KEY || '',
     },
-    customChains: [],
+    customChains: [
+      {
+        network: "mvm",
+        chainId: 73927,
+        urls: {
+          apiURL: "https://scan.mvm.dev/api",
+          browserURL: "https://scan.mvm.dev"
+        }
+      }
+    ],
   },
   namedAccounts: {
     deployer: 0,

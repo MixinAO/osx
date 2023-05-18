@@ -1,5 +1,5 @@
 {
-  "name": "@aragon/osx",
+  "name": "@mixinao/osx",
   "version": "1.2.0",
   "description": "The Aragon OSx Solidity contracts",
   "publishConfig": {

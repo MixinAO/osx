@@ -29,5 +29,11 @@
     "chainId": 80001,
     "feesUrl": "https://gasstation-mumbai.matic.today/v2",
     "deploy": ["./deploy/update/to_v1.2.0", "./deploy/verification"]
+  },
+  "mvm": {
+    "url": "https://geth.mvm.dev",
+    "isTestnet": false,
+    "chainId": 73927,
+    "gasPrice": 50000000
   }
 }

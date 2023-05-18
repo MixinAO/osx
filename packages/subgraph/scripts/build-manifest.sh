@@ -17,8 +17,8 @@ fi
 FILE=$NETWORK_NAME'.json'
 DATA=manifest/data/$FILE
 
-ARAGON_OSX_MODULE=$(node -e 'console.log(require("path").dirname(require.resolve("@aragon/osx-artifacts/package.json")))')
-
+#ARAGON_OSX_MODULE=$(node -e 'console.log(require("path").dirname(require.resolve("@aragon/osx-artifacts/package.json")))')
+ARAGON_OSX_MODULE=/home/whoami/dev/aragon/v2/osx/packages/contracts
 echo 'Generating manifest from data file: '$DATA
 cat $DATA
 
